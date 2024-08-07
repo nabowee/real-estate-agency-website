@@ -13,7 +13,7 @@
   --font-size-xxl: 2.25rem; //36px
   --font-size-xxxl: 2.5rem; //40px
 
-  --font-weight-r: 400;
+  --font-weight-r: 300;
   --font-weight-sb: 600;
   --font-weight-b: 700;
 }
@@ -29,6 +29,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: var(--font-weight-r);
   font-size: var(--font-size-s);
+  line-height: 1.5;
+  padding: 1.3rem;
 }
 
 ul {
@@ -41,4 +43,17 @@ a {
 
 img {
   max-width: 100%;
+}
+
+.main-wrapper {
+  margin: 0 auto;
+  max-width: 1392px;
+  padding: 0 1.25rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  display: none;
+  visibility: hidden;
 }
