@@ -16,7 +16,9 @@
     <header class="header">
       <div class="header-top main-wrapper">
         <div class="header-top__wrapper">
-          <a class="header-top__logo" href="#">logo</a>
+          <a class="header-top__logo" href="#">
+            <img src="/img/logo-white.png" width="40" height="100%" alt="" />
+          </a>
           <div class="header-top__inner-wrap">
             <p class="header-top__desc">Get a free consultation from our expert</p>
             <button class="header-top__btn">Request a call</button>
@@ -58,7 +60,7 @@
           <div class="header-bottom__presentation">
             <h3 class="header-bottom__presentation-title">Complex presentation</h3>
             <p class="header-bottom__presentation-desc">Iinterior, exterior, and project plans</p>
-            <button class="header-bottom__presentation-download">Download</button>
+            <button class="header-bottom__presentation-download btn">Download</button>
           </div>
         </div>
       </div>
@@ -67,25 +69,58 @@
       <div class="header-slider swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="/public/img/promo-img1.jpg" alt="" />
+            <img src="/img/promo-img1.jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="/public/img/promo-img2.jpg" alt="" />
+            <img src="/img/promo-img2.jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="/public/img/promo-img3.jpg" alt="" />
+            <img src="/img/promo-img3.jpg" alt="" />
           </div>
         </div>
       </div>
     </header>
 
-    <!-- <main class="main">
-      <div class="main-wrapper"></div>
+    <main class="main">
+      <div class="main-wrapper">
+        <section class="rent">
+          <h2 class="rent__title">Profitable to rent out</h2>
+          <div class="rent__wrapper">
+            <picture class="rent__img">
+              <source srcset="./img/3d-model-house-mobile.png" media="(max-width: 768px)" width="300" height="100%" />
+              <img src="./img/3d-model-house.png" alt="3d model of house" width="400" height="100%" />
+            </picture>
+            <div class="rent__info">
+              <p class="rent__desc">
+                The project is an excellent investment for those considering renting out their homes. Featuring contemporary design and high-end finishes, the luxurious residences appeal to renters seeking comfort and style. Beautiful views, spacious floor plans and first-class amenities, including outdoor and indoor pools, make these apartments particularly attractive for long-term rentals and
+                seasonal living. The high demand for apartments in the prestigious area of Marbella guarantees a stable income and a quick return on investment. Soul Marbella is not only an ideal place to live, but also a profitable rental asset.
+              </p>
+              <div class="rent__inner-wrapper">
+                <p class="rent__request">Leave a request and a project expert will contact you to find the right option for you.</p>
+                <button class="rent__btn btn">Submit a request</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="developer">
+          <h2 class="developer__title">Developer</h2>
+          <div class="developer__wrapper">
+            <p class="developer__desc">
+              AEDAS Homes is a leading developer specializing in the creation of high-end residential projects that combine innovative technology and elegant design. The company is actively committed to transparency, sustainability and the highest standards of quality in all phases of construction. Each AEDAS Homes home features superior finishes, attention to detail and the use of advanced
+              construction techniques. The company prides itself on its professionalism, years of experience in the real estate market and commitment to meeting all of its clients' needs, providing comfortable and modern homes in prestigious neighborhoods.
+            </p>
+            <picture class="developer__img">
+              <source srcset="./img/3d-floor-plan-mobile.png" media="(max-width: 768px)" width="300" height="100%" />
+              <img src="./img/3d-floor-plan.png" alt="3d model of house" width="400" height="100%" />
+            </picture>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
       <div class="main-wrapper"></div>
-    </footer> -->
+    </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
