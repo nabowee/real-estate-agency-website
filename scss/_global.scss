@@ -6,6 +6,7 @@
   --color-dark-grey: #302f37;
   --color-black: #000000;
 
+  --font-size-xxs: 0.75rem; //12px
   --font-size-xs: 0.875rem; //14px
   --font-size-s: 1rem; //16px
   --font-size-m: 1.25rem; //20px
@@ -89,12 +90,10 @@ img {
   border: 0;
   border-radius: var(--border-radius);
   cursor: pointer;
-  transition: all 2ms ease-in-out;
+  transition: all 15ms ease-in-out;
 
   &:hover {
-    letter-spacing: 1px;
-    color: var(--color-dark-grey);
-    background-color: var(--color-grey);
+    background-color: var(--color-black);
   }
 }
 
