@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/icon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
-    <title>Real Estate Agency</title>
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-top main-wrapper">
-        <div class="header-top__wrapper">
-          <a class="header-top__logo" href="#">
-            <picture>
-              <source srcset="/img/logo-black.png" width="40" height="100%" media="(max-width: 767px)" />
-              <img src="/img/logo-white.png" width="40" height="100%" alt="main logo" media="(min-width: 768px)" />
-            </picture>
-          </a>
-          <div class="header-top__inner-wrap">
-            <p class="header-top__desc">Get a free consultation from our expert</p>
-            <button class="header-top__btn">Request a call</button>
-            <button class="header-top__menu">
-              <span class="visually-hidden">Open menu</span>
-            </button>
-            <!-- <nav class="menu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <title>Real Estate Agency</title>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-top main-wrapper">
+      <div class="header-top__wrapper">
+        <a class="header-top__logo" href="#">
+          <picture>
+            <source srcset="/img/logo-black.png" width="40" height="100%" media="(max-width: 767px)" />
+            <img src="/img/logo-white.png" width="40" height="100%" alt="main logo" media="(min-width: 768px)" />
+          </picture>
+        </a>
+        <div class="header-top__inner-wrap">
+          <p class="header-top__desc">Get a free consultation from our expert</p>
+          <button class="header-top__btn">Request a call</button>
+          <button class="header-top__menu">
+            <span class="visually-hidden">Open menu</span>
+          </button>
+          <!-- <nav class="menu">
               <button class="menu__close"><span class="visually-hidden">Close menu</span></button>
               <ul class="menu__list">
                 <li class="menu__item"><a href="#">Gallery</a></li>
@@ -44,290 +47,288 @@
                 <li class="menu__item"><a href="#">Catalog</a></li>
               </ul>
             </nav> -->
-          </div>
         </div>
       </div>
+    </div>
 
-      <!-- slider buttons -->
-      <div class="header-slider__btns main-wrapper">
-        <div class="header-slider__btn-wrap">
-          <div class="header-slider__btn swiper-button-next"></div>
-          <div class="header-slider__btn swiper-button-prev"></div>
+    <!-- slider buttons -->
+    <div class="header-slider__btns main-wrapper">
+      <div class="header-slider__btn-wrap">
+        <div class="header-slider__btn header-slider__btn--next swiper-button-next"></div>
+        <div class="header-slider__btn header-slider__btn--prev swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <div class="header-bottom main-wrapper">
+      <div class="header-bottom__wrapper">
+        <div class="header-bottom__info">
+          <h2 class="header-bottom__info-title">Soul Marbella Sunshine</h2>
+          <p class="header-bottom__info-desc">Profitable project in the center of Marbella from the developer.
+            <span>Yield from 7% per annum.</span>
+          </p>
+        </div>
+        <div class="header-bottom__presentation">
+          <div class="header-bottom__presentation-img"></div>
+          <h3 class="header-bottom__presentation-title">Complex presentation</h3>
+          <p class="header-bottom__presentation-desc">Interior, exterior, and project plans</p>
+          <button class="header-bottom__presentation-download btn">Download</button>
         </div>
       </div>
+    </div>
 
-      <div class="header-bottom main-wrapper">
-        <div class="header-bottom__wrapper">
-          <div class="header-bottom__info">
-            <h2 class="header-bottom__info-title">Soul Marbella Sunshine</h2>
-            <p class="header-bottom__info-desc">Profitable project in the center of Marbella from the developer. <span>Yield from 7% per annum.</span></p>
-          </div>
-          <div class="header-bottom__presentation">
-            <div class="header-bottom__presentation-img"></div>
-            <h3 class="header-bottom__presentation-title">Complex presentation</h3>
-            <p class="header-bottom__presentation-desc">Interior, exterior, and project plans</p>
-            <button class="header-bottom__presentation-download btn">Download</button>
-          </div>
+    <!-- slider -->
+    <div class="header-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="/img/promo-img1-mobile.jpg" media="(max-width:467px)" />
+            <img src="/img/promo-img1.jpg" alt="Facade of Soul Marbella Sunshine" width="600px"
+              media="(min-width: 468px)" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <img src="/img/promo-img2.jpg" alt="Territory of Soul Marbella Sunshine" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <img src="/img/promo-img3.jpg" alt="Territory of Soul Marbella Sunshine" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <img src="/img/promo-img4.jpg" alt="Territory of Soul Marbella Sunshine" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <img src="/img/promo-img5.jpg" alt="Territory of Soul Marbella Sunshine" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <img src="/img/promo-img6.jpg" alt="Territory of Soul Marbella Sunshine" />
+          </picture>
         </div>
       </div>
+    </div>
+  </header>
 
-      <!-- slider -->
-      <div class="header-slider swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="/img/promo-img1-mobile.jpg" media="(max-width:467px)" />
-              <img src="/img/promo-img1.jpg" alt="Facade of Soul Marbella Sunshine" width="600px" media="(min-width: 468px)" />
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <img src="/img/promo-img2.jpg" alt="Territory of Soul Marbella Sunshine" />
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <img src="/img/promo-img3.jpg" alt="Territory of Soul Marbella Sunshine" />
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <img src="/img/promo-img4.jpg" alt="Territory of Soul Marbella Sunshine" />
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <img src="/img/promo-img5.jpg" alt="Territory of Soul Marbella Sunshine" />
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <img src="/img/promo-img6.jpg" alt="Territory of Soul Marbella Sunshine" />
-            </picture>
+  <main class="main">
+    <div class="main-wrapper">
+      <section class="gallery">
+        <div class="gallery__topWrap">
+          <h2 class="gallery__title">Project gallery</h2>
+          <div class="gallery__tabBtn-wrap">
+            <button class="gallery__tabBtn gallery__tabBtn--active" data-id="architecture">Architecture</button>
+            <button class="gallery__tabBtn" data-id="interior">Interior</button>
           </div>
         </div>
-      </div>
-    </header>
-
-    <main class="main">
-      <div class="main-wrapper">
-        <section class="gallery">
-          <div class="gallery__topWrap">
-            <h2 class="gallery__title">Project gallery</h2>
-            <div class="gallery__tabBtn-wrap">
-              <button class="gallery__tabBtn gallery__tabBtn--active" data-id="architecture">Architecture</button>
-              <button class="gallery__tabBtn" data-id="interior">Interior</button>
-            </div>
-          </div>
-          <div class="gallery__bottomWrap">
-            <div class="gallery__tab gallery__tab--active" id="architecture">
-              <div class="gallery__tab-inner">
-                <picture class="gallery__img">
-                  <img src="./img/gallery-img1.jpg" alt="architecture" width="536" height="312" />
-                </picture>
-                <picture class="gallery__img">
-                  <img src="./img/gallery-img2.jpg" alt="architecture" width="536" height="312" />
-                </picture>
-                <picture class="gallery__img">
-                  <img src="./img/gallery-img3.jpg" alt="architecture" width="536" height="568" />
-                </picture>
-                <div class="gallery__btnWrap">
-                  <button class="gallery__btn gallery__btn--download">Download album</button>
-                  <button class="gallery__btn gallery__btn--show">View all photos</button>
-                </div>
-              </div>
-
-              <div class="gallery__slider-mobile gallerySlider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./img/gallery-img1-mobile.jpg" alt="architecture" media="(max-width: 768px)" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./img/gallery-img2-mobile.jpg" alt="architecture" media="(max-width: 768px)" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./img/gallery-img3-mobile.jpg" alt="architecture" media="(max-width: 768px)" />
-                  </div>
-                </div>
-
-                <div class="swiper-pagination gallery__progressbar">
-                  <span class="swiper-pagination-progressbar"></span>
-                </div>
-
-                <div class="gallery__btnWrap">
-                  <button class="gallery__btn gallery__btn--download">Download album</button>
-                  <button class="gallery__btn gallery__btn--show">View all photos</button>
-                </div>
+        <div class="gallery__bottomWrap">
+          <div class="gallery__tab gallery__tab--active" id="architecture">
+            <div class="gallery__tab-inner">
+              <picture class="gallery__img">
+                <img src="./img/gallery-img1.jpg" alt="architecture" width="536" height="312" />
+              </picture>
+              <picture class="gallery__img">
+                <img src="./img/gallery-img2.jpg" alt="architecture" width="536" height="312" />
+              </picture>
+              <picture class="gallery__img">
+                <img src="./img/gallery-img3.jpg" alt="architecture" width="536" height="568" />
+              </picture>
+              <div class="gallery__btnWrap">
+                <button class="btn gallery__btn gallery__btn--download">Download album</button>
+                <button class="gallery__btn gallery__btn--show">View all photos</button>
               </div>
             </div>
 
-            <div class="gallery__tab" id="interior">
-              <div class="gallery__tab-inner">
-                <picture class="gallery__img">
-                  <img src="./img/interior-img1.jpg" alt="interior" width="536" height="312" />
-                </picture>
-                <picture class="gallery__img">
-                  <img src="./img/interior-img2.jpg" alt="interior" width="536" height="312" />
-                </picture>
-                <picture class="gallery__img">
-                  <img src="./img/interior-img3.jpg" alt="interior" width="536" height="568" />
-                </picture>
-                <div class="gallery__btnWrap">
-                  <button class="gallery__btn gallery__btn--download">Download album</button>
-                  <button class="gallery__btn gallery__btn--show">View all photos</button>
+            <div class="gallery__slider-mobile gallerySlider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/gallery-img1-mobile.jpg" alt="architecture" media="(max-width: 768px)" />
                 </div>
+                <div class="swiper-slide">
+                  <img src="./img/gallery-img2-mobile.jpg" alt="architecture" media="(max-width: 768px)" />
                 </div>
-
-                <div class="gallery__slider-mobile gallerySlider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="./img/interior-img1-mobile.jpg" alt="interior" media="(max-width: 768px)" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./img/interior-img2-mobile.jpg" alt="interior" media="(max-width: 768px)" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./img/interior-img3-mobile.jpg" alt="interior" media="(max-width: 768px)" />
-                    </div>
-                  </div>
-  
-                  <div class="swiper-pagination gallery__progressbar">
-                    <span class="swiper-pagination-progressbar"></span>
-                  </div>
-
-
-                <div class="gallery__btnWrap">
-                  <button class="gallery__btn gallery__btn--download">Download album</button>
-                  <button class="gallery__btn gallery__btn--show">View all photos</button>
+                <div class="swiper-slide">
+                  <img src="./img/gallery-img3-mobile.jpg" alt="architecture" media="(max-width: 768px)" />
                 </div>
               </div>
-            
-          </div>
-        </section>
-        <section class="rent">
-          <h2 class="rent__title">Profitable to rent out</h2>
-          <div class="rent__wrapper">
-            <picture class="rent__img">
-              <source srcset="./img/3d-model-house-mobile.png" media="(max-width: 768px)" width="300" height="100%" />
-              <img src="./img/3d-model-house.png" alt="3d model of house" width="400" height="100%" />
-            </picture>
-            <div class="rent__info">
-              <p class="rent__desc">
-                The project is an excellent investment for those considering renting out their homes. Featuring contemporary design and high-end finishes, the luxurious residences appeal to renters seeking comfort and style. Beautiful views, spacious floor plans and first-class amenities, including outdoor and indoor pools, make these apartments particularly attractive for long-term rentals and
-                seasonal living. The high demand for apartments in the prestigious area of Marbella guarantees a stable income and a quick return on investment. Soul Marbella is not only an ideal place to live, but also a profitable rental asset.
-              </p>
-              <div class="rent__inner-wrapper">
-                <p class="rent__request">Leave a request and a project expert will contact you to find the right option for you.</p>
-                <button class="rent__btn btn">Submit a request</button>
+
+              <div class="swiper-pagination gallery__progressbar">
+                <span class="swiper-pagination-progressbar"></span>
+              </div>
+
+              <div class="gallery__btnWrap">
+                <button class="btn gallery__btn gallery__btn--download">Download album</button>
+                <button class="gallery__btn gallery__btn--show">View all photos</button>
               </div>
             </div>
           </div>
-        </section>
-        <section class="developer">
-          <h2 class="developer__title">Developer</h2>
-          <div class="developer__wrapper">
-            <p class="developer__desc">
-              AEDAS Homes is a leading developer specializing in the creation of high-end residential projects that combine innovative technology and elegant design. The company is actively committed to transparency, sustainability and the highest standards of quality in all phases of construction. Each AEDAS Homes home features superior finishes, attention to detail and the use of advanced
-              construction techniques. The company prides itself on its professionalism, years of experience in the real estate market and commitment to meeting all of its clients' needs, providing comfortable and modern homes in prestigious neighborhoods.
+
+          <div class="gallery__tab" id="interior">
+            <div class="gallery__tab-inner">
+              <picture class="gallery__img">
+                <img src="./img/interior-img1.jpg" alt="interior" width="536" height="312" />
+              </picture>
+              <picture class="gallery__img">
+                <img src="./img/interior-img2.jpg" alt="interior" width="536" height="312" />
+              </picture>
+              <picture class="gallery__img">
+                <img src="./img/interior-img3.jpg" alt="interior" width="536" height="568" />
+              </picture>
+              <div class="gallery__btnWrap">
+                <button class=" btn gallery__btn gallery__btn--download">Download album</button>
+                <button class="gallery__btn gallery__btn--show">View all photos</button>
+              </div>
+            </div>
+
+            <div class="gallery__slider-mobile gallerySlider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/interior-img1-mobile.jpg" alt="interior" media="(max-width: 768px)" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/interior-img2-mobile.jpg" alt="interior" media="(max-width: 768px)" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/interior-img3-mobile.jpg" alt="interior" media="(max-width: 768px)" />
+                </div>
+              </div>
+
+              <div class="swiper-pagination gallery__progressbar">
+                <span class="swiper-pagination-progressbar"></span>
+              </div>
+
+
+              <div class="gallery__btnWrap">
+                <button class=" btn gallery__btn gallery__btn--download">Download album</button>
+                <button class="gallery__btn gallery__btn--show">View all photos</button>
+              </div>
+            </div>
+
+          </div>
+      </section>
+      <section class="review">
+        <div class="review__header-wrap">
+          <h2 class="review__title">About us</h2>
+          <p class="review__more">What the experts says</p>
+        </div>
+
+        <div class="review__slider">
+          <div class="review__slider-container swiper-container">
+            <div class="review__slider-wrapper swiper-wrapper">
+
+              <div class="review__slider-slide swiper-slide">
+                <div class="review__slider-inner-desc">
+                  <h3 class="review__slider-title">Designed to combine luxury and modern</h3>
+                  <p class="review__slider-desc">
+                    The project is the perfect blend of contemporary design and luxury, offering exquisite living spaces
+                    and world-class amenities. Every detail of the development, from the spacious bedrooms with
+                    panoramic windows to the magnificent indoor and outdoor swimming pools, reflects a high standard of
+                    quality and comfort. This project has been designed to provide the ultimate living experience,
+                    making it an ideal choice for those who appreciate style and elegance in every aspect of their
+                    lives.
+                  </p>
+                </div>
+                <figure class="review__slider-inner-author">
+                  <img class="review__slider-author-img" src="/public/img/avatar1.jpg" alt="review author" width="160"
+                    height="160">
+                  <div class="review__slider-name-wrap">
+                    <figcaption class="review__slider-author-name">James</figcaption>
+                    <p class="review__slider-author-title">Project expert</p>
+                  </div>
+                </figure>
+              </div>
+
+              <div class="review__slider-slide swiper-slide">
+                <div class="review__slider-inner-desc">
+                  <h3 class="review__slider-title">Luxury apartments</h3>
+                  <p class="review__slider-desc">
+                    The project offers a unique combination of elegant design and comfort in one of the best areas of
+                    Marbella. The living spaces are characterized by spacious layouts, modern interiors and panoramic
+                    views. An important part of the complex are the stylish swimming pools and recreational areas,
+                    creating an atmosphere of luxury and relaxation. This project is ideal for those who are looking for
+                    high quality housing with maximum amenities and well thought out infrastructure.
+                  </p>
+                </div>
+                <figure class="review__slider-inner-author">
+                  <img class="review__slider-author-img" src="/public/img/avatar2.jpg" alt="review author" width="160"
+                    height="160">
+                  <div class="review__slider-name-wrap">
+                    <figcaption class="review__slider-author-name">William </figcaption>
+                    <p class="review__slider-author-title">Project expert</p>
+                  </div>
+                </figure>
+              </div>
+
+
+
+            </div>
+          </div>
+          <div class="review__slider-btn-wrap">
+            <div class="review__slider-button review__slider-button-next swiper-button-next"></div>
+            <div class="review__slider-button review__slider-button-prev swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rent">
+        <h2 class="rent__title">Profitable to rent out</h2>
+        <div class="rent__wrapper">
+          <picture class="rent__img">
+            <source srcset="./img/3d-model-house-mobile.png" media="(max-width: 768px)" width="300" height="100%" />
+            <img src="./img/3d-model-house.png" alt="3d model of house" width="400" height="100%" />
+          </picture>
+          <div class="rent__info">
+            <p class="rent__desc">
+              The project is an excellent investment for those considering renting out their homes. Featuring
+              contemporary design and high-end finishes, the luxurious residences appeal to renters seeking comfort and
+              style. Beautiful views, spacious floor plans and first-class amenities, including outdoor and indoor
+              pools, make these apartments particularly attractive for long-term rentals and
+              seasonal living. The high demand for apartments in the prestigious area of Marbella guarantees a stable
+              income and a quick return on investment. Soul Marbella is not only an ideal place to live, but also a
+              profitable rental asset.
             </p>
-            <picture class="developer__img">
-              <source srcset="./img/3d-floor-plan-mobile.png" media="(max-width: 768px)" width="300" height="100%" />
-              <img src="./img/3d-floor-plan.png" alt="3d model of house" width="400" height="100%" />
-            </picture>
+            <div class="rent__inner-wrapper">
+              <p class="rent__request">Leave a request and a project expert will contact you to find the right option
+                for you.</p>
+              <button class="rent__btn btn">Submit a request</button>
+            </div>
           </div>
-        </section>
-        <section class="about">
-          
-        </section>
-      </div>
-    </main>
+        </div>
+      </section>
+      <section class="developer">
+        <h2 class="developer__title">Developer</h2>
+        <div class="developer__wrapper">
+          <p class="developer__desc">
+            AEDAS Homes is a leading developer specializing in the creation of high-end residential projects that
+            combine innovative technology and elegant design. The company is actively committed to transparency,
+            sustainability and the highest standards of quality in all phases of construction. Each AEDAS Homes home
+            features superior finishes, attention to detail and the use of advanced
+            construction techniques. The company prides itself on its professionalism, years of experience in the real
+            estate market and commitment to meeting all of its clients' needs, providing comfortable and modern homes in
+            prestigious neighborhoods.
+          </p>
+          <picture class="developer__img">
+            <source srcset="./img/3d-floor-plan-mobile.png" media="(max-width: 768px)" width="300" height="100%" />
+            <img src="./img/3d-floor-plan.png" alt="3d model of house" width="400" height="100%" />
+          </picture>
+        </div>
+      </section>
+    </div>
+  </main>
 
-    <footer class="footer">
-      <div class="main-wrapper"></div>
-    </footer>
 
-    <!--  -->
-    <!-- <button class="button button--hyperion">
-      <span><span>New page</span></span>
-    </button>
-    <style>
-      .button {
-        pointer-events: auto;
-        cursor: pointer;
-        background: #e7e7e7;
-        border: none;
-        padding: 1.5rem 3rem;
-        margin: 0;
-        font-family: inherit;
-        font-size: inherit;
-        position: relative;
-        display: inline-block;
-      }
+  <footer class="footer">
+    <div class="main-wrapper"></div>
+  </footer>
 
-      .button::before,
-      .button::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-      .button--hyperion {
-        font-family: input-mono-narrow, monospace;
-        font-weight: 500;
-        padding: 1rem 1.5rem;
-        border: 1px solid #000;
-        overflow: hidden;
-        color: #fff;
-      }
-      .button--hyperion span {
-        display: block;
-        position: relative;
-      }
 
-      .button--hyperion > span {
-        overflow: hidden;
-      }
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="/main.js"></script>
+</body>
 
-      .button--hyperion > span > span {
-        overflow: hidden;
-        mix-blend-mode: difference;
-      }
-
-      .button--hyperion:hover > span > span {
-        animation: MoveUpInitial 0.2s forwards, MoveUpEnd 0.2s forwards 0.2s;
-      }
-
-      @keyframes MoveUpInitial {
-        to {
-          transform: translate3d(0, -105%, 0);
-        }
-      }
-
-      @keyframes MoveUpEnd {
-        from {
-          transform: translate3d(0, 100%, 0);
-        }
-        to {
-          transform: translate3d(0, 0, 0);
-        }
-      }
-
-      .button--hyperion::before {
-        content: "";
-        background: #000;
-        transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
-        transform-origin: 100% 50%;
-      }
-
-      .button--hyperion:hover::before {
-        transform: scale3d(0, 1, 1);
-        transform-origin: 0% 50%;
-      }
-    </style> -->
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="/main.js"></script>
-  </body>
 </html>

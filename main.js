@@ -9,15 +9,14 @@ const headerSlider = new Swiper(".header-slider", {
   // },
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".header-slider__btn--next",
+    prevEl: ".header-slider__btn--prev",
   },
 });
 //
 
 // getting header height for styling purpose
 const headerTopSect = document.querySelector(".header-top__wrapper");
-
 document.documentElement.style.setProperty("--header-top-height", `${headerTopSect.offsetHeight}px`);
 
 //
@@ -83,4 +82,13 @@ function checkScreenWidth() {
 checkScreenWidth();
 window.addEventListener("resize", checkScreenWidth);
 
+// review slider
+const reviewSlider = new Swiper(".review__slider-container", {
+  speed: 800,
+  loop: true,
 
+  navigation: {
+    nextEl: ".review__slider-button-next",
+    prevEl: ".review__slider-button-prev",
+  },
+});

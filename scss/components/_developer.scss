@@ -6,6 +6,7 @@
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-sb);
   }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -14,10 +15,12 @@
     background: linear-gradient(to right, var(--color-white2) 0%, var(--color-white) 25%);
     border-radius: var(--border-radius);
   }
+
   &__desc {
     flex: 2;
     margin: 70px 55px;
   }
+
   &__img {
     & img {
       flex: 1;
@@ -26,32 +29,39 @@
     }
   }
 }
+
 @media (max-width: 992px) {
   .developer {
     &__title {
       margin-bottom: 20px;
     }
+
     &__wrapper {
       text-align: center;
     }
+
     &__desc {
       margin: 35px 27px;
     }
   }
 }
+
 @media (max-width: 768px) {
   .developer {
     padding: 2.5rem 0;
+
     &__title {
       text-align: center;
       font-size: var(--font-size-l);
     }
+
     &__wrapper {
       font-size: var(--font-size-xs);
       flex-direction: column;
       gap: 0;
       background: linear-gradient(to top, var(--color-white2) 0%, var(--color-white) 25%);
     }
+
     &__desc {
       padding: 24px;
       margin: 0;
