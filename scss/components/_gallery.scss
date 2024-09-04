@@ -96,6 +96,7 @@
     }
 
     &--show {
+      font-weight: var(--font-weight-r);
       background-color: transparent;
 
       &:hover {

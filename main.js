@@ -4,6 +4,7 @@ import "/scss/style.scss";
 const headerSlider = new Swiper(".header-slider", {
   speed: 800,
   loop: true,
+  spaceBetween: 30,
   // autoplay: {
   //   delay: 2500,
   // },
@@ -85,10 +86,22 @@ window.addEventListener("resize", checkScreenWidth);
 // review slider
 const reviewSlider = new Swiper(".review__slider-container", {
   speed: 800,
+  spaceBetween: 30,
   loop: true,
 
   navigation: {
     nextEl: ".review__slider-button-next",
     prevEl: ".review__slider-button-prev",
+  },
+});
+
+// plans slider
+const plansSlider = new Swiper(".plans__slider", {
+  speed: 800,
+  spaceBetween: 30,
+
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
   },
 });

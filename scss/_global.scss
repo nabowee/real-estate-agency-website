@@ -38,6 +38,7 @@ body {
   font-size: var(--font-size-s);
   line-height: 1.5;
   padding: 1.3rem;
+
   @media (max-width: 992px) {
     padding: 0.5rem;
   }
@@ -74,9 +75,11 @@ img {
   @media (max-width: 992px) {
     padding: 0 2.5rem;
   }
+
   @media (max-width: 768px) {
     padding: 0 1.5rem;
   }
+
   @media (max-width: 368px) {
     padding: 0 0.5rem;
   }
@@ -84,10 +87,12 @@ img {
 
 .btn {
   padding: 17px;
-  color: var(--color-white);
+  font-family: inherit;
   font-size: var(--font-size-s);
+  font-weight: var(--font-weight-r);
+  color: var(--color-white);
+  border: 1px solid var(--color-dark-grey);
   background-color: var(--color-dark-grey);
-  border: 0;
   border-radius: var(--border-radius);
   cursor: pointer;
   transition: all 15ms ease-in-out;
@@ -97,7 +102,6 @@ img {
   }
 }
 
-@media (max-width: 992px) {
-}
-@media (max-width: 768px) {
-}
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
