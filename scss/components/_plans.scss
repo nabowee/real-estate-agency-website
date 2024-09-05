@@ -1,25 +1,17 @@
 .plans {
   position: relative;
   padding: 3rem 0;
+  margin-bottom: 0.5rem;
 
   &__title {
-    margin-bottom: 0.5rem;
+    margin-bottom: 2.5rem;
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-sb);
+    line-height: 1.1;
 
     &--gap {
       display: block;
     }
-  }
-
-  &__wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    padding: 3.5rem 4.5rem;
-    background: linear-gradient(to left, var(--color-white2) 0%, var(--color-white) 25%);
-    border-radius: var(--border-radius);
   }
 
   &__slider {
@@ -28,6 +20,10 @@
   }
 
   &__slide {
+    padding: 3.5rem 4.5rem;
+    background: linear-gradient(to left, var(--color-white2) 0%, var(--color-white) 25%);
+    border-radius: var(--border-radius);
+
     &-wrap {
       display: flex;
       justify-content: space-between;
@@ -103,7 +99,6 @@
     }
   }
 
-
   .swiper-scrollbar-horizontal {
     background-color: var(--color-light-grey);
   }
@@ -122,11 +117,9 @@
 
 @media (max-width: 992px) {
   .plans {
-    &__wrap {
-      background: linear-gradient(to top, var(--color-white2) 0%, var(--color-white) 25%);
-    }
-
     &__slide {
+      background: linear-gradient(to top, var(--color-white2) 0%, var(--color-white) 25%);
+
       &-wrap {
         flex-direction: column;
         align-items: center;
@@ -144,6 +137,7 @@
     padding: 2.5rem 0;
 
     &__title {
+      margin-bottom: 0.5rem;
       text-align: center;
       font-size: var(--font-size-m);
 
@@ -156,11 +150,9 @@
       }
     }
 
-    &__wrap {
-      padding: 2rem;
-    }
-
     &__slide {
+      padding: 2rem;
+
       &-inner {
         width: 100%;
       }

@@ -9,6 +9,7 @@
 
   &-top {
     width: 100%;
+    position: relative;
 
     &__wrapper {
       display: flex;
@@ -44,6 +45,11 @@
       background-color: transparent;
       border-radius: var(--border-radius);
       cursor: pointer;
+
+      &:hover,
+      &:focus {
+        background-color: rgba(#ffffff, 0.2);
+      }
     }
 
     &__menu {
@@ -56,6 +62,68 @@
       background-repeat: no-repeat;
       background-position: 47% 50%;
       cursor: pointer;
+
+      &:hover,
+      &:focus {
+        background-color: rgba(#ffffff, 0.2);
+      }
+    }
+
+    .menu {
+      display: none;
+      flex-direction: column;
+
+      position: absolute;
+      top: 4rem;
+      right: 5rem;
+      padding: 2rem 1.5rem;
+      width: 392px;
+      background-color: var(--color-white);
+      border-radius: var(--border-radius);
+      box-shadow: 1px 10px 100px var(--color-dark-grey);
+      z-index: 100;
+
+      &--active {
+        display: flex;
+      }
+
+      &__close {
+        margin-bottom: 0.5rem;
+        align-self: center;
+        width: 50px;
+        height: 50px;
+        border: 1px solid var(--color-dark-grey);
+        border-radius: 50%;
+        background-color: transparent;
+      }
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+      }
+
+      &__item {
+        padding: 0.5rem;
+        transition: all 15ms ease-in-out;
+
+
+        a {
+          color: var(--color-dark-grey);
+        }
+
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+          text-underline-offset: 0.5rem;
+          scale: 1.1;
+        }
+
+        // &:not(:hover){
+        //   opacity: 0.1;
+        // }
+      }
     }
   }
 
@@ -78,6 +146,7 @@
         margin-bottom: 16px;
         font-size: var(--font-size-xxxl);
         font-weight: var(--font-weight-b);
+        line-height: 1.1;
       }
 
       &-desc {
@@ -120,6 +189,7 @@
         max-width: 200px;
         font-size: var(--font-size-m);
         font-weight: var(--font-weight-sb);
+        line-height: 1.1;
       }
 
       &-desc {
@@ -205,6 +275,11 @@
       background-repeat: no-repeat;
       background-position: 50% 50%;
       cursor: pointer;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: rgba(#ffffff, 0.2);
     }
   }
 

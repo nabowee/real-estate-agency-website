@@ -5,9 +5,9 @@ const headerSlider = new Swiper(".header-slider", {
   speed: 800,
   loop: true,
   spaceBetween: 30,
-  // autoplay: {
-  //   delay: 2500,
-  // },
+  autoplay: {
+    delay: 2500,
+  },
 
   navigation: {
     nextEl: ".header-slider__btn--next",
@@ -21,8 +21,10 @@ const headerTopSect = document.querySelector(".header-top__wrapper");
 document.documentElement.style.setProperty("--header-top-height", `${headerTopSect.offsetHeight}px`);
 
 //
-// gallery tabs
+// gallery 
 //
+
+//tabs
 
 const galleryTabBtn = document.querySelectorAll(".gallery__tabBtn");
 const galleryTabs = document.querySelectorAll(".gallery__tab");
@@ -51,12 +53,12 @@ function initSwiper() {
     slidesPerView: 1,
     spaceBetween: 10,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".gallery__progressbar",
       type: "progressbar",
     },
   });
 }
-const progressBar = document.querySelector(".swiper-pagination-progressbar");
+const progressBar = document.querySelector(".gallery-swiper-pagination-progressbar");
 
 progressBar.addEventListener("click", function (event) {
   const progressBarRect = progressBar.getBoundingClientRect();
@@ -101,7 +103,30 @@ const plansSlider = new Swiper(".plans__slider", {
   spaceBetween: 30,
 
   scrollbar: {
-    el: ".swiper-scrollbar",
+    el: ".plans__slider-scrollbar",
     draggable: true,
   },
+});
+
+//plans exclusive form
+const exclusiveForm = document.querySelector("#exclusiveForm")
+
+exclusiveForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+})
+
+
+//
+// infrastructure
+//
+
+let infrastructureSlicer = new Swiper('.infrastructure__slider', {
+  speed: 800,
+  spaceBetween: 30,
+
+  scrollbar: {
+    el: ".infrastructure__slider-scrollbar",
+    draggable: true,
+  },
+
 });
