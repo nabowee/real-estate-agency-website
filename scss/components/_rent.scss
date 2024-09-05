@@ -1,10 +1,11 @@
 .rent {
-  padding: 3rem 0 0;
+  padding: 3rem 0;
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-sb);
+    line-height: 1.1;
   }
 
   &__wrapper {
