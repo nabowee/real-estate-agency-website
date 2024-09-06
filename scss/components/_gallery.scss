@@ -99,7 +99,6 @@
     &--show {
       font-weight: var(--font-weight-r);
       background-color: transparent;
-      color: var(--color-dark-grey);
 
       &:hover {
         border: 1px solid var(--color-light-grey);
@@ -115,7 +114,7 @@
 
 @media (max-width: 768px) {
   .gallery {
-    padding: 1.5rem 0 0;
+    padding: 2.5rem 0 0;
 
     &__tab-inner {
       display: none;
@@ -208,4 +207,3 @@
     }
   }
 }
-
