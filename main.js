@@ -31,14 +31,37 @@ const menuOpenBtn = document.querySelector("#menuOpenBtn")
 const menuCloseBtn = document.querySelector("#menuCloseBtn")
 const headerMenu = document.querySelector(".menu")
 
-menuOpenBtn.addEventListener("click", () => {
+
+function closeMenu() {
+  headerMenu.classList.remove("menu--active");
+  menuOpenBtn.removeAttribute('disabled');
+}
+
+function openMenu() {
   headerMenu.classList.add("menu--active")
   menuOpenBtn.setAttribute('disabled', 'true');
-})
-menuCloseBtn.addEventListener("click", () => {
-  headerMenu.classList.remove("menu--active")
-  menuOpenBtn.removeAttribute('disabled');
-})
+}
+
+menuOpenBtn.addEventListener("click", openMenu)
+menuCloseBtn.addEventListener("click", closeMenu)
+
+menuOpenBtn.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    openMenu()
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && headerMenu.classList.contains("menu--active")) {
+    closeMenu();
+  }
+});
+
+document.addEventListener("click", (e) => {
+  if (!headerMenu.contains(e.target) && !menuOpenBtn.contains(e.target) && headerMenu.classList.contains("menu--active")) {
+    closeMenu();
+  }
+});
 
 
 //
@@ -155,8 +178,6 @@ let infrastructureSlicer = new Swiper('.infrastructure__slider', {
 //
 //map
 //
-
-// AIzaSyCAPrbDmEfz2GJaM5DyGo7kNQrWvNxtc90
 
 let map;
 function initMap() {
@@ -369,21 +390,56 @@ function initMap() {
     icon: pin
   })
 }
-
 initMap()
 
-
-
+//
 //request form
+//
+
 const requestACall = document.querySelector("#requestACall")
 const requestCloseBtn = document.querySelector("#requestACallCloseBtn")
 const headerRequestOpen = document.querySelector(".header-top__btn")
 
-headerRequestOpen.addEventListener("click", () => {
-  requestACall.classList.add("requestACall--active")
-  document.body.classList.add("noscroll")
-})
-requestCloseBtn.addEventListener("click", () => {
+
+function closeRequestForm() {
   requestACall.classList.remove("requestACall--active")
-  document.body.classList.remove("noscroll")
-})
+}
+
+function openRequestForm() {
+  requestACall.classList.add("requestACall--active")
+}
+
+headerRequestOpen.addEventListener("click", openRequestForm)
+requestCloseBtn.addEventListener("click", closeRequestForm)
+
+headerRequestOpen.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    openRequestForm()
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && requestACall.classList.contains("requestACall--active")) {
+    closeRequestForm();
+  }
+});
+
+document.addEventListener("click", (e) => {
+  if (!requestACall.contains(e.target) && !headerRequestOpen.contains(e.target) && requestACall.classList.contains("requestACall--active")) {
+    closeRequestForm();
+  }
+});
+
+
+//
+// footer
+//
+
+const footerMenuOpenBtn = document.querySelector("#footerMenuOpenBtn")
+const footerMenu = document.querySelector(".footer-top__nav2")
+
+function openFooterMenu() {
+  footerMenu.classList.toggle("footer-top__nav2--active")
+}
+
+footerMenuOpenBtn.addEventListener("click", openFooterMenu)
