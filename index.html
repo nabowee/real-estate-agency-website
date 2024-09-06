@@ -33,21 +33,20 @@
           </button>
         </div>
       </div>
-      <nav class="menu ">
+      <nav class="menu">
         <button class="menu__close" id="menuCloseBtn"><span class="visually-hidden">Close menu</span></button>
         <ul class="menu__list">
-          <li class="menu__item"><a href="#">Gallery</a></li>
-          <li class="menu__item"><a href="#">About</a></li>
-          <li class="menu__item"><a href="#">Plans</a></li>
-          <li class="menu__item"><a href="#">Developer</a></li>
-          <li class="menu__item"><a href="#">Infastructure</a></li>
-          <li class="menu__item"><a href="#">Apartments for rent</a></li>
-
-          <!-- <li class="menu__item"><a href="#">Interior</a></li>
-          <li class="menu__item"><a href="#">Amenities</a></li>
+          <li class="menu__item"><a href="#gallery">Gallery</a></li>
+          <li class="menu__item"><a href="#review">About</a></li>
+          <li class="menu__item"><a href="#plans">Plans</a></li>
+          <li class="menu__item"><a href="#developer">Developer</a></li>
+          <li class="menu__item"><a href="#infrastructure">Infastructure</a></li>
+          <li class="menu__item"><a href="#rent">Apartments for rent</a></li>
+          <li class="menu__item"><a href="#location">Location</a></li>
+          <!-- 
           <li class="menu__item"><a href="#">Area</a></li>
-          <li class="menu__item"><a href="#">Location</a></li>
-          <li class="menu__item"><a href="#">Catalog</a></li> -->
+          <li class="menu__item"><a href="#">Catalog</a></li> 
+          -->
         </ul>
       </nav>
     </div>
@@ -115,11 +114,10 @@
       </div>
     </div>
   </header>
-  </div>
 
   <main class="main">
     <div class="main-wrapper">
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="gallery__topWrap">
           <h2 class="gallery__title">Project gallery</h2>
           <div class="gallery__tabBtn-wrap">
@@ -214,7 +212,7 @@
 
           </div>
       </section>
-      <section class="review">
+      <section class="review " id="review">
         <div class="review__header-wrap">
           <h2 class="review__title">About us</h2>
           <p class="review__more">What the experts says</p>
@@ -274,7 +272,7 @@
           </div>
         </div>
       </section>
-      <section class="plans">
+      <section class="plans" id="plans">
         <h2 class="plans__title">Available <span class="plans__title--gap">project<span> <span
                 class="plans__title--hide">plans</span></h2>
         <div class="plans__slider swiper-container">
@@ -479,7 +477,7 @@
           </div>
         </div>
       </section>
-      <section class="developer">
+      <section class="developer" id="developer">
         <h2 class="developer__title">Developer</h2>
         <div class="developer__wrapper">
           <p class="developer__desc">
@@ -497,7 +495,7 @@
           </picture>
         </div>
       </section>
-      <section class="infrastructure">
+      <section class="infrastructure" id="infrastructure">
         <h2 class="infrastructure__title">Infrastructure</h2>
 
         <div class="infrastructure__imgs">
@@ -528,7 +526,7 @@
           <div class="infrastructure__slider-scrollbar swiper-scrollbar "></div>
         </div>
       </section>
-      <section class="rent">
+      <section class="rent" id="rent">
         <h2 class="rent__title">Profitable to rent out</h2>
         <div class="rent__wrapper">
           <picture class="rent__img">
@@ -553,7 +551,7 @@
           </div>
         </div>
       </section>
-      <section class="location">
+      <section class="location" id="location">
         <div class="location__wrap">
           <h2 class="location__title">Location</h2>
           <ul class="location__list">
@@ -593,6 +591,38 @@
 
   <footer class="footer">
     <div class="main-wrapper">
+      <div class="footer__wrap">
+        <div class="footer-top">
+
+          <img class="footer-top__logo" src="/img/logo-white.png" width="40" height="100%" alt="main logo" />
+          <nav class="footer-top__nav1">
+            <ul class="footer-top__nav1-list">
+              <li class="footer-top__nav1-item"><a href="#gallery">Gallery</a></li>
+              <li class="footer-top__nav1-item"><a href="#review">About</a></li>
+              <li class="footer-top__nav1-item"><a href="#plans">Plans</a></li>
+              <li class="footer-top__nav1-item"><a href="#infrastructure">Infastructure</a></li>
+            </ul>
+          </nav>
+          <button class="footer-top__open-menu" id="footerMenuOpenBtn">
+            <span class="visually-hidden">Open menu</span>
+          </button>
+          <nav class="footer-top__nav2">
+            <ul class="footer-top__nav2-list">
+              <li class="footer-top__nav2-item"><a href="#rent">Apartments for rent</a></li>
+              <li class="footer-top__nav2-item"><a href="#developer">Developer</a></li>
+              <li class="footer-top__nav2-item"><a href="#location">Location</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-mid">
+          <!-- <p>Get a free consultation from our expert</p> -->
+        </div>
+        <div class="footer-bottom">
+          <a href="#">User Agreement</a>
+          <a href="#">Personal data processing policy</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
     </div>
   </footer>
 
@@ -623,7 +653,6 @@
       <!-- </div> -->
     </div>
   </div>
-
 
   <script type="module" src="/main.js"></script>
   <!-- Swiper JS -->
