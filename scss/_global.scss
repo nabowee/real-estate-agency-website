@@ -34,11 +34,12 @@
 
 body {
   margin: 0;
+  padding: 1.3rem;
   font-family: "Open Sans", sans-serif;
   font-weight: var(--font-weight-r);
   font-size: var(--font-size-s);
   line-height: 1.5;
-  padding: 1.3rem;
+  scroll-behavior: smooth;
 
   @media (max-width: 992px) {
     padding: 0.5rem;
@@ -78,11 +79,11 @@ img {
   }
 
   @media (max-width: 768px) {
-    padding: 0 1.5rem;
+    padding: 0 0.5rem;
   }
 
   @media (max-width: 368px) {
-    padding: 0 0.5rem;
+    padding: 0;
   }
 }
 
