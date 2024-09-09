@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/real-estate-agency/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <title>Real Estate Agency</title>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script type="module" crossorigin src="/real-estate-agency/assets/index-DcJcGu9G.js"></script>
+  <link rel="stylesheet" crossorigin href="/real-estate-agency/assets/index-DobKoRxT.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-top main-wrapper">
+      <div class="header-top__wrapper">
+        <a class="header-top__logo" href="#">
+          <picture>
+            <source srcset="/real-estate-agency/img/logo-black.png" width="40" height="100%" media="(max-width: 767px)" />
+            <img src="/real-estate-agency/img/logo-white.png" width="40" height="100%" alt="main logo" media="(min-width: 768px)" />
+          </picture>
+        </a>
+        <div class="header-top__inner-wrap">
+          <p class="header-top__desc">Get a free consultation from our expert</p>
+          <button class="header-top__btn">Request a call</button>
+          <button class="header-top__open-menu" id="menuOpenBtn">
+            <span class="visually-hidden">Open menu</span>
+          </button>
+        </div>
+      </div>
+      <nav class="menu ">
+        <button class="menu__close" id="menuCloseBtn"><span class="visually-hidden">Close menu</span></button>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#">Gallery</a></li>
+          <li class="menu__item"><a href="#">About</a></li>
+          <li class="menu__item"><a href="#">Plans</a></li>
+          <li class="menu__item"><a href="#">Developer</a></li>
+          <li class="menu__item"><a href="#">Infastructure</a></li>
+          <li class="menu__item"><a href="#">Apartments for rent</a></li>
+
+          <!-- <li class="menu__item"><a href="#">Interior</a></li>
+          <li class="menu__item"><a href="#">Amenities</a></li>
+          <li class="menu__item"><a href="#">Area</a></li>
+          <li class="menu__item"><a href="#">Location</a></li>
+          <li class="menu__item"><a href="#">Catalog</a></li> -->
+        </ul>
+      </nav>
+    </div>
+
+    <!-- slider buttons -->
+    <div class="header-slider__btns main-wrapper">
+      <div class="header-slider__btn-wrap">
+        <div class="header-slider__btn header-slider__btn--next swiper-button-next"></div>
+        <div class="header-slider__btn header-slider__btn--prev swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <div class="header-bottom main-wrapper">
+      <div class="header-bottom__wrapper">
+        <div class="header-bottom__info">
+          <h2 class="header-bottom__info-title">Soul Marbella Sunshine</h2>
+          <p class="header-bottom__info-desc">Profitable project in the center of Marbella from the developer.
+            <span>Yield from 7% per annum.</span>
+          </p>
+        </div>
+        <div class="header-bottom__presentation">
+          <div class="header-bottom__presentation-img"></div>
+          <h3 class="header-bottom__presentation-title">Complex presentation</h3>
+          <p class="header-bottom__presentation-desc">Interior, exterior, and project plans</p>
+          <button class="header-bottom__presentation-download btn">Download</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- slider -->
+    <div class="header-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="/real-estate-agency/img/promo-img1-mobile.jpg" media="(max-width:467px)" />
+            <img src="/real-estate-agency/img/promo-img1.jpg" alt="Facade of Soul Marbella Sunshine" width="600px"
+              media="(min-width: 468px)" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <img src="/real-estate-agency/img/promo-img2.jpg" alt="Territory of Soul Marbella Sunshine" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <img src="/real-estate-agency/img/promo-img3.jpg" alt="Territory of Soul Marbella Sunshine" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <img src="/real-estate-agency/img/promo-img4.jpg" alt="Territory of Soul Marbella Sunshine" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <img src="/real-estate-agency/img/promo-img5.jpg" alt="Territory of Soul Marbella Sunshine" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <img src="/real-estate-agency/img/promo-img6.jpg" alt="Territory of Soul Marbella Sunshine" />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </header>
+  </div>
+
+  <main class="main">
+    <div class="main-wrapper">
+      <section class="gallery">
+        <div class="gallery__topWrap">
+          <h2 class="gallery__title">Project gallery</h2>
+          <div class="gallery__tabBtn-wrap">
+            <button class="gallery__tabBtn gallery__tabBtn--active" data-id="architecture">Architecture</button>
+            <button class="gallery__tabBtn" data-id="interior">Interior</button>
+          </div>
+        </div>
+        <div class="gallery__bottomWrap">
+          <div class="gallery__tab gallery__tab--active" id="architecture">
+            <div class="gallery__tab-inner">
+              <picture class="gallery__img">
+                <img src="./img/gallery-img1.jpg" alt="architecture" width="536" height="312" />
+              </picture>
+              <picture class="gallery__img">
+                <img src="./img/gallery-img2.jpg" alt="architecture" width="536" height="312" />
+              </picture>
+              <picture class="gallery__img">
+                <img src="./img/gallery-img3.jpg" alt="architecture" width="536" height="568" />
+              </picture>
+              <div class="gallery__btnWrap">
+                <button class="btn gallery__btn gallery__btn--download">Download album</button>
+                <button class="gallery__btn gallery__btn--show">View all photos</button>
+              </div>
+            </div>
+
+            <div class="gallery__slider-mobile gallerySlider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/gallery-img1-mobile.jpg" alt="architecture" media="(max-width: 768px)" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/gallery-img2-mobile.jpg" alt="architecture" media="(max-width: 768px)" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/gallery-img3-mobile.jpg" alt="architecture" media="(max-width: 768px)" />
+                </div>
+              </div>
+
+              <div class=" gallery__progressbar">
+                <!-- swiper-pagination -->
+                <!-- swiper-pagination-progressbar -->
+                <span class=" gallery-swiper-pagination-progressbar"></span>
+              </div>
+
+              <div class="gallery__btnWrap">
+                <button class="btn gallery__btn gallery__btn--download">Download album</button>
+                <button class="gallery__btn gallery__btn--show">View all photos</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__tab" id="interior">
+            <div class="gallery__tab-inner">
+              <picture class="gallery__img">
+                <img src="./img/interior-img1.jpg" alt="interior" width="536" height="312" />
+              </picture>
+              <picture class="gallery__img">
+                <img src="./img/interior-img2.jpg" alt="interior" width="536" height="312" />
+              </picture>
+              <picture class="gallery__img">
+                <img src="./img/interior-img3.jpg" alt="interior" width="536" height="568" />
+              </picture>
+              <div class="gallery__btnWrap">
+                <button class=" btn gallery__btn gallery__btn--download">Download album</button>
+                <button class="gallery__btn gallery__btn--show">View all photos</button>
+              </div>
+            </div>
+
+            <div class="gallery__slider-mobile gallerySlider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/interior-img1-mobile.jpg" alt="interior" media="(max-width: 768px)" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/interior-img2-mobile.jpg" alt="interior" media="(max-width: 768px)" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/interior-img3-mobile.jpg" alt="interior" media="(max-width: 768px)" />
+                </div>
+              </div>
+
+              <div class="swiper-pagination gallery__progressbar">
+                <span class="swiper-pagination-progressbar"></span>
+              </div>
+
+
+              <div class="gallery__btnWrap">
+                <button class=" btn gallery__btn gallery__btn--download">Download album</button>
+                <button class="gallery__btn gallery__btn--show">View all photos</button>
+              </div>
+            </div>
+
+          </div>
+      </section>
+      <section class="review">
+        <div class="review__header-wrap">
+          <h2 class="review__title">About us</h2>
+          <p class="review__more">What the experts says</p>
+        </div>
+
+        <div class="review__slider">
+          <div class="review__slider-container swiper-container">
+            <div class="review__slider-wrapper swiper-wrapper">
+
+              <div class="review__slider-slide swiper-slide">
+                <div class="review__slider-inner-desc">
+                  <h3 class="review__slider-title">Designed to combine luxury and modern</h3>
+                  <p class="review__slider-desc">
+                    The project is the perfect blend of contemporary design and luxury, offering exquisite living spaces
+                    and world-class amenities. Every detail of the development, from the spacious bedrooms with
+                    panoramic windows to the magnificent indoor and outdoor swimming pools, reflects a high standard of
+                    quality and comfort. This project has been designed to provide the ultimate living experience,
+                    making it an ideal choice for those who appreciate style and elegance in every aspect of their
+                    lives.
+                  </p>
+                </div>
+                <figure class="review__slider-inner-author">
+                  <img class="review__slider-author-img" src="/real-estate-agency/assets/avatar1-W9hxLHic.jpg" alt="review author" width="160"
+                    height="160">
+                  <div class="review__slider-name-wrap">
+                    <figcaption class="review__slider-author-name">James</figcaption>
+                    <p class="review__slider-author-title">Project expert</p>
+                  </div>
+                </figure>
+              </div>
+
+              <div class="review__slider-slide swiper-slide">
+                <div class="review__slider-inner-desc">
+                  <h3 class="review__slider-title">Luxury apartments</h3>
+                  <p class="review__slider-desc">
+                    The project offers a unique combination of elegant design and comfort in one of the best areas of
+                    Marbella. The living spaces are characterized by spacious layouts, modern interiors and panoramic
+                    views. An important part of the complex are the stylish swimming pools and recreational areas,
+                    creating an atmosphere of luxury and relaxation. This project is ideal for those who are looking for
+                    high quality housing with maximum amenities and well thought out infrastructure.
+                  </p>
+                </div>
+                <figure class="review__slider-inner-author">
+                  <img class="review__slider-author-img" src="/real-estate-agency/assets/avatar2-DOmp6K3F.jpg" alt="review author" width="160"
+                    height="160">
+                  <div class="review__slider-name-wrap">
+                    <figcaption class="review__slider-author-name">William </figcaption>
+                    <p class="review__slider-author-title">Project expert</p>
+                  </div>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="review__slider-btn-wrap">
+            <div class="review__slider-button review__slider-button-next swiper-button-next"></div>
+            <div class="review__slider-button review__slider-button-prev swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <section class="plans">
+        <h2 class="plans__title">Available <span class="plans__title--gap">project<span> <span
+                class="plans__title--hide">plans</span></h2>
+        <div class="plans__slider swiper-container">
+          <div class="plans__slider-wrapper swiper-wrapper">
+            <div class="plans__slide swiper-slide">
+              <div class="plans__slide-wrap">
+                <div class="plans__slide-img-wrap">
+                  <img src="/real-estate-agency/assets/plan-bedroom2%20-CfBUIQ5N.png" alt="2-bedrooms plan" class="plans__slide-img" width="500">
+                </div>
+                <div class="plans__slide-inner">
+                  <ul class="plans__slide-param">
+                    <li>
+                      <p>1,090,000 €</p>
+                      <h4>Starting price</h4>
+                    </li>
+                    <li>
+                      <p>130 м2</p>
+                      <h4>Square</h4>
+                    </li>
+                    <li>
+                      <p>2</p>
+                      <h4>Rooms</h4>
+                    </li>
+                  </ul>
+                  <div class="plans__slide-payments">
+                    <h4 class="plans__slide-payments__title">Payment plan</h4>
+                    <ul>
+                      <li>
+                        <p>Before construction</p>
+                        <span></span>
+                        <p class="plans__slide-payments__percentage">20%</p>
+                      </li>
+                      <li>
+                        <p>During construction</p>
+                        <span></span>
+                        <p class="plans__slide-payments__percentage">40%</p>
+                      </li>
+                      <li>
+                        <p>After construction</p>
+                        <span></span>
+                        <p class="plans__slide-payments__percentage">40%</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="plans__slide swiper-slide">
+              <div class="plans__slide-wrap">
+                <div class="plans__slide-img-wrap">
+                  <img src="/real-estate-agency/assets/plan-bedroom3-Bhc6YSNT.png" alt="3-bedrooms plan" class="plans__slide-img" width="500">
+                </div>
+                <div class="plans__slide-inner">
+                  <ul class="plans__slide-param">
+                    <li>
+                      <p>1,290,000 €</p>
+                      <h4>Starting price</h4>
+                    </li>
+                    <li>
+                      <p>170 м2</p>
+                      <h4>Square</h4>
+                    </li>
+                    <li>
+                      <p>3</p>
+                      <h4>Rooms</h4>
+                    </li>
+                  </ul>
+                  <div class="plans__slide-payments">
+                    <h4 class="plans__slide-payments__title">Payment plan</h4>
+                    <ul>
+                      <li>
+                        <p>Before construction</p>
+                        <span></span>
+                        <p class="plans__slide-payments__percentage">20%</p>
+                      </li>
+                      <li>
+                        <p>During construction</p>
+                        <span></span>
+                        <p class="plans__slide-payments__percentage">40%</p>
+                      </li>
+                      <li>
+                        <p>After construction</p>
+                        <span></span>
+                        <p class="plans__slide-payments__percentage">40%</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="plans__slide swiper-slide">
+              <div class="plans__slide-wrap">
+                <div class="plans__slide-img-wrap">
+                  <img src="/real-estate-agency/assets/plan-bedroom4-eV57u8F6.png" alt="4-bedrooms plan" class="plans__slide-img" width="500">
+                </div>
+                <div class="plans__slide-inner">
+                  <ul class="plans__slide-param">
+                    <li>
+                      <p>1,790,000 €</p>
+                      <h4>Starting price</h4>
+                    </li>
+                    <li>
+                      <p>190 м2</p>
+                      <h4>Square</h4>
+                    </li>
+                    <li>
+                      <p>4</p>
+                      <h4>Rooms</h4>
+                    </li>
+                  </ul>
+                  <div class="plans__slide-payments">
+                    <h4 class="plans__slide-payments__title">Payment plan</h4>
+                    <ul>
+                      <li>
+                        <p>Before construction</p>
+                        <span></span>
+                        <p class="plans__slide-payments__percentage">20%</p>
+                      </li>
+                      <li>
+                        <p>During construction</p>
+                        <span></span>
+                        <p class="plans__slide-payments__percentage">40%</p>
+                      </li>
+                      <li>
+                        <p>After construction</p>
+                        <span></span>
+                        <p class="plans__slide-payments__percentage">40%</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plans__slider-scrollbar swiper-scrollbar"></div>
+      </section>
+      <section class="exclusive">
+        <h2 class="exclusive__title">Exclusive plans</h2>
+        <div class="exclusive__container">
+          <div class="exclusive__wrap">
+            <div class="exclusive__slider swiper-container">
+              <div class="exclusive__slider-wrapper swiper-wrapper">
+                <div class="exclusive__slide swiper-slide">
+                  <div class="exclusive__slide-wrap">
+                    <div class="exclusive__slide-img-wrap">
+                      <img src="/real-estate-agency/assets/plan-bedroom4-eV57u8F6.png" alt="4-bedrooms plan" class="exclusive__slide-img"
+                        width="500">
+                    </div>
+                    <div class="exclusive__slide-inner">
+                      <ul class="exclusive__slide-param">
+                        <li>
+                          <p>1,790,000 €</p>
+                          <h4>Starting price</h4>
+                        </li>
+                        <li>
+                          <p>190 м2</p>
+                          <h4>Square</h4>
+                        </li>
+                        <li>
+                          <p>4</p>
+                          <h4>Rooms</h4>
+                        </li>
+                      </ul>
+                      <div class="exclusive__slide-payments">
+                        <h4 class="exclusive__slide-payments__title">Payment plan</h4>
+                        <ul>
+                          <li>
+                            <p>Before construction</p>
+                            <span></span>
+                            <p class="exclusive__slide-payments__percentage">20%</p>
+                          </li>
+                          <li>
+                            <p>During construction</p>
+                            <span></span>
+                            <p class="exclusive__slide-payments__percentage">40%</p>
+                          </li>
+                          <li>
+                            <p>After construction</p>
+                            <span></span>
+                            <p class="exclusive__slide-payments__percentage">40%</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- form -->
+          <div class="exclusive__form-wrap">
+            <h3 class="exclusive__form-title">Would you like to get<br> exclusive plans?</h3>
+            <p class="exclusive__form-desc">Fill out the form and our expert will get back to you
+              as soon as possible</p>
+            <form action="#" class="exclusive__form-itself" id="exclusiveForm">
+              <input type="text" name="username" class="exclusive__form-username" id="username" placeholder="Your name">
+              <input type="number" name="userphone" class="exclusive__form-userphone" id="userphone"
+                placeholder="Your phone">
+              <button type="submit" class="exclusive__form-btn">Book a call</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="developer">
+        <h2 class="developer__title">Developer</h2>
+        <div class="developer__wrapper">
+          <p class="developer__desc">
+            AEDAS Homes is a leading developer specializing in the creation of high-end residential projects that
+            combine innovative technology and elegant design. The company is actively committed to transparency,
+            sustainability and the highest standards of quality in all phases of construction. Each AEDAS Homes home
+            features superior finishes, attention to detail and the use of advanced
+            construction techniques. The company prides itself on its professionalism, years of experience in the real
+            estate market and commitment to meeting all of its clients' needs, providing comfortable and modern homes in
+            prestigious neighborhoods.
+          </p>
+          <picture class="developer__img">
+            <source srcset="./img/3d-floor-plan-mobile.png" media="(max-width: 768px)" width="300" height="100%" />
+            <img src="./img/3d-floor-plan.png" alt="3d model of house" width="400" height="100%" />
+          </picture>
+        </div>
+      </section>
+      <section class="infrastructure">
+        <h2 class="infrastructure__title">Infrastructure</h2>
+
+        <div class="infrastructure__imgs">
+          <div class="infrastructure__img">
+            <img src="/real-estate-agency/img/infrastructure-img1.jpg" alt="infrastructure" width="536" height="344" />
+          </div>
+          <div class="infrastructure__img">
+            <img src="/real-estate-agency/img/infrastructure-img2.jpg" alt="infrastructure" width="536" height="344" />
+          </div>
+          <div class="infrastructure__img">
+            <img src="/real-estate-agency/img/infrastructure-img3.jpg" alt="infrastructure" width="1096" height="344" />
+          </div>
+        </div>
+
+        <!-- mobile slider -->
+        <div class="infrastructure__slider infrastructure__slider--mobile swiper-container">
+          <div class="infrastructure__slider-wrapper swiper-wrapper">
+            <div class="infrastructure__slide swiper-slide">
+              <img src="/real-estate-agency/img/infrastructure-img1-mobile.jpg" alt="infrastructure" width="353" height="444" />
+            </div>
+            <div class="infrastructure__slide swiper-slide">
+              <img src="/real-estate-agency/img/infrastructure-img2-mobile.jpg" alt="infrastructure" width="353" height="444" />
+            </div>
+            <div class="infrastructure__slide swiper-slide">
+              <img src="/real-estate-agency/img/infrastructure-img3-mobile.jpg" alt="infrastructure" width="353" height="444" />
+            </div>
+          </div>
+          <div class="infrastructure__slider-scrollbar swiper-scrollbar "></div>
+        </div>
+      </section>
+      <section class="rent">
+        <h2 class="rent__title">Profitable to rent out</h2>
+        <div class="rent__wrapper">
+          <picture class="rent__img">
+            <source srcset="./img/3d-model-house-mobile.png" media="(max-width: 768px)" width="300" height="100%" />
+            <img src="./img/3d-model-house.png" alt="3d model of house" width="400" height="100%" />
+          </picture>
+          <div class="rent__info">
+            <p class="rent__desc">
+              The project is an excellent investment for those considering renting out their homes. Featuring
+              contemporary design and high-end finishes, the luxurious residences appeal to renters seeking comfort and
+              style. Beautiful views, spacious floor plans and first-class amenities, including outdoor and indoor
+              pools, make these apartments particularly attractive for long-term rentals and
+              seasonal living. The high demand for apartments in the prestigious area of Marbella guarantees a stable
+              income and a quick return on investment. Soul Marbella is not only an ideal place to live, but also a
+              profitable rental asset.
+            </p>
+            <div class="rent__inner-wrapper">
+              <p class="rent__request">Leave a request and a project expert will contact you to find the right option
+                for you.</p>
+              <button class="rent__btn btn">Submit a request</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="location">
+        <div class="location__wrap">
+          <h2 class="location__title">Location</h2>
+          <ul class="location__list">
+            <li class="location__item">
+              School<span class="location__item-decor">, </span><span class="location__item-min">7 mins</span>
+            </li>
+            <li class="location__item">
+              Beach<span class="location__item-decor">, </span><span class="location__item-min">10 mins</span>
+            </li>
+            <li class="location__item">
+              Market<span class="location__item-decor">, </span><span class="location__item-min">5 mins</span>
+            </li>
+          </ul>
+          <div class="location__map" id="map"> </div>
+        </div>
+      </section>
+      <section class="contact">
+        <h2 class="contact__title">Book a free consultation</h2>
+        <p class="contact__desc">Enter your contact information and a manager will contact you,
+          to arrange a convenient time to view the property.</p>
+        <div class="contact__btn-wrap">
+          <button class="btn contact__btn contact__btn--website">Apply via website</button>
+          <a class="btn contact__btn contact__btn--whatsapp" href="#" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.8547 4.05156C16.8906 2.08281 14.275 1 11.4953 1C5.75781 1 1.08906 5.66875 1.08906 11.4062C1.08906 13.2391 1.56719 15.0297 2.47656 16.6094L1 22L6.51719 20.5516C8.03594 21.3813 9.74687 21.8172 11.4906 21.8172H11.4953C17.2281 21.8172 22 17.1484 22 11.4109C22 8.63125 20.8188 6.02031 18.8547 4.05156ZM11.4953 20.0641C9.93906 20.0641 8.41562 19.6469 7.08906 18.8594L6.775 18.6719L3.50313 19.5297L4.375 16.3375L4.16875 16.0094C3.30156 14.6313 2.84688 13.0422 2.84688 11.4062C2.84688 6.63906 6.72812 2.75781 11.5 2.75781C13.8109 2.75781 15.9812 3.65781 17.6125 5.29375C19.2437 6.92969 20.2469 9.1 20.2422 11.4109C20.2422 16.1828 16.2625 20.0641 11.4953 20.0641ZM16.2391 13.5859C15.9813 13.4547 14.7016 12.8266 14.4625 12.7422C14.2234 12.6531 14.05 12.6109 13.8766 12.8734C13.7031 13.1359 13.2063 13.7172 13.0516 13.8953C12.9016 14.0688 12.7469 14.0922 12.4891 13.9609C10.9609 13.1969 9.95781 12.5969 8.95 10.8672C8.68281 10.4078 9.21719 10.4406 9.71406 9.44687C9.79844 9.27344 9.75625 9.12344 9.69062 8.99219C9.625 8.86094 9.10469 7.58125 8.88906 7.06094C8.67813 6.55469 8.4625 6.625 8.30313 6.61563C8.15313 6.60625 7.97969 6.60625 7.80625 6.60625C7.63281 6.60625 7.35156 6.67188 7.1125 6.92969C6.87344 7.19219 6.20312 7.82031 6.20312 9.1C6.20312 10.3797 7.13594 11.6172 7.2625 11.7906C7.39375 11.9641 9.09531 14.5891 11.7062 15.7188C13.3562 16.4312 14.0031 16.4922 14.8281 16.3703C15.3297 16.2953 16.3656 15.7422 16.5812 15.1328C16.7969 14.5234 16.7969 14.0031 16.7313 13.8953C16.6703 13.7781 16.4969 13.7125 16.2391 13.5859Z"
+                fill="black" />
+            </svg>
+            Contact
+            us on
+            WhatsApp
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="main-wrapper">
+    </div>
+  </footer>
+
+  <div class="main-wrapper">
+    <div class="requestACall" id="requestACall">
+      <!-- <div class="requestACall__inner"> -->
+      <button class="requestACall__close" id="requestACallCloseBtn"><span class="visually-hidden">Close
+          pop-up</span></button>
+
+      <div class="requestACall__wrap">
+        <h2 class="requestACall__title">Request an expert call</h2>
+        <p class="requestACall__desc">Fill out the form and our expert will get back to you
+          as soon as possible</p>
+
+        <form action="#" class="requestACall__form" id="requestACallForm">
+          <input type="text" name="username" class="requestACall__form-username" id="username" placeholder="Your name">
+          <input type="number" name="userphone" class="requestACall__form-userphone" id="userphone"
+            placeholder="Your phone">
+          <button type="submit" class="requestACall__form-btn">Book a call</button>
+        </form>
+
+        <a href="#" class="requestACall__privacy">By submitting an application, you consent to the processing of your
+          personal data.</a>
+        <a href="#" class="requestACall__privacy">Our site is secured with reCAPTCHA and complies with Google's
+          Privacy
+          Policy and Terms of Use.</a>
+      </div>
+      <!-- </div> -->
+    </div>
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAPrbDmEfz2GJaM5DyGo7kNQrWvNxtc90&callback=initMap"
+    async defer>
+    </script>
+
+</body>
+
+</html>
