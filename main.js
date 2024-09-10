@@ -190,7 +190,7 @@ function initMap() {
   ]
 
   const pin = {
-    url: "/public/img/map-pin.png",
+    url: "/img/map-pin.png",
     scaledSize: new google.maps.Size(25, 25)
   }
 
@@ -403,10 +403,12 @@ const headerRequestOpen = document.querySelector(".header-top__btn")
 
 function closeRequestForm() {
   requestACall.classList.remove("requestACall--active")
+  headerRequestOpen.removeAttribute('disabled');
 }
 
 function openRequestForm() {
   requestACall.classList.add("requestACall--active")
+  headerRequestOpen.setAttribute('disabled', 'true');
 }
 
 headerRequestOpen.addEventListener("click", openRequestForm)

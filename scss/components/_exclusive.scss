@@ -137,7 +137,7 @@
         right: -9.5rem;
         width: 200px;
         height: 200px;
-        background-image: url(/public/img/diamond.gif);
+        background-image: url(/img/diamond.gif);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -197,9 +197,11 @@
       }
 
       input[type="number"] {
+        appearance: none;
         -moz-appearance: textfield;
       }
     }
+
 
     &-btn {
       padding: 1rem 2rem;
