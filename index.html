@@ -10,10 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet" />
   <title>Real Estate Agency</title>
-
-  <!-- Link Swiper's CSS -->
+  <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script type="module" crossorigin src="/real-estate-agency-website/assets/index-Xx-LaGdz.js"></script>
+  <!-- map -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+  <script type="module" crossorigin src="/real-estate-agency-website/assets/index-GTkN3dtt.js"></script>
   <link rel="stylesheet" crossorigin href="/real-estate-agency-website/assets/index-C8S_-Jc6.css">
 </head>
 
@@ -547,23 +548,6 @@
           </div>
         </div>
       </section>
-      <section class="location" id="location">
-        <div class="location__wrap">
-          <h2 class="location__title">Location</h2>
-          <ul class="location__list">
-            <li class="location__item">
-              School<span class="location__item-decor">, </span><span class="location__item-min">7 mins</span>
-            </li>
-            <li class="location__item">
-              Beach<span class="location__item-decor">, </span><span class="location__item-min">10 mins</span>
-            </li>
-            <li class="location__item">
-              Market<span class="location__item-decor">, </span><span class="location__item-min">5 mins</span>
-            </li>
-          </ul>
-          <div class="location__map" id="map"> </div>
-        </div>
-      </section>
       <section class="contact">
         <h2 class="contact__title">Book a free consultation</h2>
         <p class="contact__desc">Enter your contact information and a manager will contact you,
@@ -580,6 +564,23 @@
             us on
             WhatsApp
           </a>
+        </div>
+      </section>
+      <section class="location" id="location">
+        <div class="location__wrap">
+          <h2 class="location__title">Location</h2>
+          <ul class="location__list">
+            <li class="location__item">
+              School<span class="location__item-decor">, </span><span class="location__item-min">7 mins</span>
+            </li>
+            <li class="location__item">
+              Beach<span class="location__item-decor">, </span><span class="location__item-min">10 mins</span>
+            </li>
+            <li class="location__item">
+              Market<span class="location__item-decor">, </span><span class="location__item-min">5 mins</span>
+            </li>
+          </ul>
+          <div class="location__map" id="map"> </div>
         </div>
       </section>
     </div>
@@ -641,7 +642,7 @@
         <h2 class="requestACall__title">Request an expert call</h2>
         <p class="requestACall__desc">Fill out the form and our expert will get back to you as soon as possible</p>
 
-        <form action="#" class="requestACall__form" id="requestACallForm">
+        <form action="submit.php" method="POST" class="requestACall__form" id="requestACallForm">
           <input type="text" name="username" class="requestACall__form-username" id="username" placeholder="Your name">
           <input type="number" name="userphone" class="requestACall__form-userphone" id="userphone"
             placeholder="Your phone">
@@ -663,7 +664,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- map -->
-  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
 
 </body>
