@@ -35,7 +35,7 @@
       transform: translateY(-50%);
       width: 56px;
       height: 32px;
-      background-image: url(/public/img/map-icons.svg);
+      background-image: url(/img/map-icons.svg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
@@ -96,5 +96,3 @@
     }
   }
 }
-
-@media (max-width: 430px) {}
